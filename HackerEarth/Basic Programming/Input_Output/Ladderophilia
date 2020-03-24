@@ -1,0 +1,11 @@
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/ladderophilia/
+
+#include <stdio.h>
+int main()
+{
+	int n,i;
+	scanf("%d", &n);
+  printf("*   *\n*   *\n");
+  for(i=1;i<=n;i++)
+    printf("*****\n*   *\n*   *\n");
+}
