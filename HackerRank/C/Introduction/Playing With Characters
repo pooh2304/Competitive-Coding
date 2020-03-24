@@ -1,0 +1,19 @@
+https://www.hackerrank.com/challenges/playing-with-characters/problem
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define MAX 500
+int main() 
+{
+    char ch,s[100],sen[MAX];
+    scanf("%c",&ch);
+    scanf("%s",s);
+    scanf("\n%[^\n]%*c",sen);
+    printf("%c\n",ch);
+    printf("%s\n",s);
+    printf("%s\n",sen);
+    return 0;
+}
+
