@@ -1,0 +1,21 @@
+https://www.hackerrank.com/challenges/sum-numbers-c/problem
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c,d;
+    float p,q,r,s;
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    d=a-b;
+    printf("%d %d\n",c,d);
+    scanf("%f %f",&p,&q);
+    r=p+q;
+    s=p-q;
+    printf("%.1f %.1f",r,s);
+    return 0;
+}
