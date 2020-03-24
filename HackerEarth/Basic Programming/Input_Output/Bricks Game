@@ -1,0 +1,30 @@
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/bricks-game-5140869d/
+
+#include<stdio.h>
+int main()
+{
+    int n,i=1;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        if(n<i)
+            n=n-n;
+        else
+            n=n-i;
+        if(n==0)
+        {
+            printf("Patlu");
+            break;
+        }
+        if(n<i*2)
+            n=n-n;
+        else
+            n=n-(i*2);
+        if(n==0)
+        {
+            printf("Motu");
+            break;
+        }
+        i++;
+    }
+}
