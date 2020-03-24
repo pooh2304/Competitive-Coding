@@ -1,0 +1,24 @@
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/roy-and-profile-picture/
+
+#include<stdio.h>
+int main()
+{
+    int l,n,w,h,i;
+    scanf("%d",&l);
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d%d",&w,&h);
+        if(w<l||h<l)
+        {
+            printf("\nUPLOAD ANOTHER");
+        }
+        else
+        {
+            if(w==h)
+                printf("\nACCEPTED");
+            else
+                printf("\nCROP IT");
+        }
+    }
+}
