@@ -1,0 +1,24 @@
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/mojtaba-prepares-contest-29b2a044/
+
+#include <stdio.h>
+int main(){
+	int t,cg,cp,n,k,i,f,s,sum,sum1;
+	scanf("%d", &t); 
+	for(k=1;k<=t;k++)
+	{
+	    sum=0;
+	    sum1=0;
+	    scanf("%d%d",&cg,&cp);
+	    scanf("%d",&n);
+	    for(i=1;i<=n;i++)
+	    {
+	        scanf("%d%d",&f,&s);
+	        sum=sum+(f*cg)+(s*cp);
+	        sum1=sum1+(f*cp)+(s*cg);
+	    }
+	    if(sum<sum1)
+	        printf("%d\n",sum);
+	   else
+	        printf("%d\n",sum1);
+	}
+}
