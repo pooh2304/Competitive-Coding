@@ -1,0 +1,21 @@
+https://www.hackerrank.com/challenges/for-loop-in-c/problem
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() 
+{
+    char ch[11][6]={"one","two","three","four","five","six","seven","eight","nine","even","odd"};
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	for(int i=a;i<=b;i++)
+    {
+        if(i>=1&&i<=9)
+            printf("%s\n",ch[i-1]);
+        else if(i>9)
+            printf("%s\n",ch[9+(i%2)]);
+    }
+    return 0;
+}
+
