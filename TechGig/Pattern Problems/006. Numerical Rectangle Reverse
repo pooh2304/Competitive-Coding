@@ -16,5 +16,5 @@ int main()
 		if(i>1)
 			cout<<"\n";
 	}
-    return 0;
+  return 0;
 }
