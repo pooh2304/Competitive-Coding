@@ -1,0 +1,27 @@
+https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/lift-queries/
+
+#include<stdio.h>
+int main()
+{
+    int t,i,n,A=0,B=7;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&n);
+        if(n-A<B-n)
+        {
+            printf("\nA");
+            A=n;
+        }
+        else if(n-A==B-n)
+        {
+            printf("\nA");
+            A=n;
+        }
+        else
+        {
+            printf("\nB");
+            B=n;
+        }
+    }
+}
