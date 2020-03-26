@@ -1,0 +1,22 @@
+https://www.techgig.com/practice/question/alphabetical-rectangle-reverse/em1yc0dxeXdEb1ZjZnBRR1FyeTREVGRIelFsc0NZVitWb1Y2UmFQSjZrbnczTTU4MHBtWWJpSlVIUTVTTVpxbA==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=n;i>=1;i--)
+	{
+		for(j=1;j<=5;j++)
+		{
+			if(j<5)
+				cout<<(char)(i+64)<<" ";
+			else
+				cout<<(char)(i+64);
+		}
+		if(i>1)
+			cout<<"\n";
+	}
+	return 0;
+}
