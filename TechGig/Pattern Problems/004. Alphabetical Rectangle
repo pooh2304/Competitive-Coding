@@ -1,0 +1,22 @@
+https://www.techgig.com/practice/question/alphabetical-rectangle/ZTdLRm96dlF3bkhMSWFIbW8xUnJ5RGRWZjhiOGwwcGR5WGwxTFZyTXBlazgxMmNVNFM0RGcrSzU4cmxrMjFUZw==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=5;j++)
+		{
+			if(j<5)
+				cout<<((char)(i+64))<<" ";
+			else
+				cout<<((char)(i+64));
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
