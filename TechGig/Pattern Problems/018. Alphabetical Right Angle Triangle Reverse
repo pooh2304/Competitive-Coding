@@ -1,0 +1,23 @@
+https://www.techgig.com/practice/question/alphabetical-right-angle-triangle-reverse/MENqdzZ5YVdRVERpK0VsWnNjc3M2N3kvR2hNV0pycUFCbnZWSFZVOEJEN1RQbEFwcGpJdHdRME42cTdTRlgzVw==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j,k;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		k=n-i+1;
+		for(j=1;j<=k;j++)
+		{
+			if(j<k)
+				cout<<(char)(i+64)<<" ";
+			else
+				cout<<(char)(i+64);
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
