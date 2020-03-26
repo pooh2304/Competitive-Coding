@@ -1,0 +1,23 @@
+https://www.techgig.com/practice/question/ascending-numerical-right-angle-triangle-reverse/S1pHbllZSnNQY3pxQktqTEhQamZZRXg3SjY3SW5uNmhHeXZvcjRHeHk5d1ZXY1lSenhjWkkxNTNSdGFMaVRLaw==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j,k;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		k=n-i+1;
+		for(j=1;j<=k;j++)
+		{
+			if(j<k)
+				cout<<j<<" ";
+			else
+				cout<<j;
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
