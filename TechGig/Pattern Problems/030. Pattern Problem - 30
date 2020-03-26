@@ -1,0 +1,24 @@
+https://www.techgig.com/practice/question/pattern-problem-30/ZEk0ZnNRQTUvZWVQR2kvdWkyWkVkUUlpNmQ1cnpLNk91dERQREsvaERKWkJPZFBiNmlabTZuZ1h2N3pkSG5SSA==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=n;i>=1;i--)
+	{
+		for(j=1;j<=n-i;j++)
+			cout<<"  ";
+		for(j=1;j<=i;j++)
+		{
+			if(j<i)
+				cout<<i<<" ";
+			else
+				cout<<i;
+		}
+		if(i>1)
+			cout<<"\n";
+	}
+	return 0;
+}
