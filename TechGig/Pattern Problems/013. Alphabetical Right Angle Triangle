@@ -1,0 +1,22 @@
+https://www.techgig.com/practice/question/alphabetical-right-angle-triangle/T3ZrMjlVRUl1cmNSenI4L0U5ZjZtTk9rNXF1SHFFL2I2WUU4MEh6Q3FZclo2WUY0QlV6bWtTeTcvaWV4VUZLNA==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			if(j<i)
+				cout<<(char)(i+64)<<" ";
+			else
+				cout<<(char)(i+64);
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
