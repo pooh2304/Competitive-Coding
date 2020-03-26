@@ -1,0 +1,22 @@
+techgig.com/practice/question/pattern-problem-21/WktzalRjUEI1UFlZQXF3TmZUcGs1OXNXVmQraE4wcTEzVW1PcU9makNFZGQ5SUNYWGhzMnlDeDAwZTVicCtEYg==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=n;j>=i;j--)
+		{
+			if(j>i)
+				cout<<j<<" ";
+			else
+				cout<<j;
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
