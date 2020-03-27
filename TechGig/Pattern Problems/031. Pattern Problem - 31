@@ -1,0 +1,25 @@
+https://www.techgig.com/practice/question/pattern-problem-31/QzVBVk5HYkQ2L3BCTWxzaWY2a3o5SStwOVFkNzhRSk51akVvQzVJdE9sMlhnVURwUzNvalU4RmZmNEdGcnpKZg==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j,k;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		k=n-i+1;
+		for(j=1;j<i;j++)
+			cout<<"  ";
+		for(j=1;j<=k;j++)
+		{
+			if(j<k)
+				cout<<j<<" ";
+			else
+				cout<<j;
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
