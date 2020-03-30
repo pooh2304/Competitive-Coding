@@ -1,0 +1,24 @@
+https://www.techgig.com/practice/question/pattern-problem-44/aHZxbE5LWGxKR2grRmJuNFFSR3VzZ1huK1JCK0FoZEFXVzhHaWd5YkZPOWtXWnNWL05sSVFqVzVtOUlHWi8yQw==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		for(j=1;j<n-i;j++)
+			cout<<"  ";
+		for(j=-i;j<=i;j++)
+		{
+			if(j<i||i==0)
+				cout<<(char)(abs(j)+65)<<" ";
+			else
+				cout<<(char)(abs(j)+65);
+		}
+		if(i<n-1)
+			cout<<"\n";
+	}
+	return 0;
+}
