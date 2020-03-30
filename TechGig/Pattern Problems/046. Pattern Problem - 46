@@ -1,0 +1,33 @@
+https://www.techgig.com/practice/question/pattern-problems-46/WFlkb2Q0eG9ISXI1c1hTdFZOUFlVdFhtUFc4QmJWTlJqc2RMOXN6SGFCdG5aaVBuWVZGMDZOR0w5M25NSExpMg==/1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n,i,j,k;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		k=1;
+		for(j=1;j<=n-i;j++)
+			cout<<"  ";
+		for(j=1;j<2*i;j++)
+		{
+			if(j<i)
+			{
+				cout<<(char)(k+64);
+				k++;
+			}
+			else
+			{
+				cout<<(char)(k+64);
+				k--;
+			}
+			if(j<2*i-1)
+				cout<<" ";
+		}
+		if(i<n)
+			cout<<"\n";
+	}
+	return 0;
+}
