@@ -1,0 +1,13 @@
+https://www.techgig.com/practice/question/day-1/djRBVVN5MXh3VlZVOUFOZ0VrS1Y5a3F3amgzejg4QWFrRitabnM4am1CeHBwaEdHbXZ2N0VrRkVIZ0RsdUN3bw==/1
+
+#include <iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	string str;
+	getline(cin,str);
+	cout<<"Hello Techgig"<<"\n";
+	cout<<str;
+	return 0;
+}
