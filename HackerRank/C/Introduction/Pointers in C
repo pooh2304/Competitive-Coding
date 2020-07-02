@@ -5,11 +5,9 @@ https://www.hackerrank.com/challenges/pointer-in-c/problem
 void update(int *a,int *b) {
     int x,y;
     x=*a+*b;
-    y=*a-*b;  
-    if(y<0)
-        y=y*(-1);
+    y=abs(*a-*b);
     *a=x;
-    *b=y; 
+    *b=y;  
 }
 
 int main() {
