@@ -9,7 +9,7 @@ int main()
 {
     int n,i,j;
     scanf("%d", &n);
-  	int size = 2*n-1;
+    int size = 2*n-1;
     int a[size][size];
     int start = 0,end = size-1;
     while(n!=0)
