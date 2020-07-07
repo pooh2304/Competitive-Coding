@@ -13,14 +13,10 @@ https://www.hackerrank.com/challenges/a-very-big-sum/problem
 char* readline();
 char** split_string(char*);
 
-// Complete the aVeryBigSum function below.
 long aVeryBigSum(int ar_count, long* ar) {
-    int i;
     long int sum=0;
-    for(i=0;i<ar_count;i++)
-    {
+    for(int i=0;i<ar_count;i++)
         sum=sum+ar[i];
-    }
     return sum;
 }
 
